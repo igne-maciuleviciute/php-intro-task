@@ -22,9 +22,3 @@ namespace Nfq\Akademija\Soft {
     }
 }
 
-//namespace Nfq\Akademija\Strict {
-//    function calculateHomeWorkSum(int $a, float $b, string $c): int
-//    {
-//        return $a + $b + $c;
-//    }
-//}
