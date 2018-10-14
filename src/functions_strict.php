@@ -3,9 +3,13 @@ declare(strict_types=1);
 
 namespace Nfq\Akademija\Strict;
 
-function callStrictTypeCalculation()
+function callStrictTypeCalculation(int $a, float $b, string $c)
 {
-    echo("strict\n");
+    return $a + $b + $c;
+
+    function calculateHomeWorkSum() {
+        $this -> callStrictTypeCalculation();
+    }
 }
 
 
