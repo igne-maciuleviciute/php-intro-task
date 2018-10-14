@@ -2,29 +2,29 @@
 
 
 namespace Nfq\Akademija {
-    function calculateHomeWorkSum($first, $second, $third)
+    function calculateHomeWorkSum($a, $b, $c)
     {
-        return $first+$second+$third;
+        return $a + $b + $c;
     }
 }
 
 namespace Nfq\Akademija\Not_Typed {
-    function calculateHomeWorkSum($first, $second, $third): int
+    function calculateHomeWorkSum($a, $b, $c): int
     {
-        return $first+$second+$third;
+        return $a + $b + $c;
     }
 }
 
 namespace Nfq\Akademija\Soft {
-    function calculateHomeWorkSum($first, $second, $third): int
+    function calculateHomeWorkSum(int $a, int $b, int $c): int
     {
-        return $first+$second+$third;
+        return $a + $b + $c;
     }
 }
 
 namespace Nfq\Akademija\Strict {
-    function calculateHomeWorkSum($first, $second, $third): int
+    function calculateHomeWorkSum(int $a, float $b, string $c): int
     {
-        return $first+$second+$third;
+        return $a + $b + $c;
     }
 }
