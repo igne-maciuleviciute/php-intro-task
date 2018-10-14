@@ -1,29 +1,30 @@
 <?php
 
+
 namespace Nfq\Akademija {
-    function calculateHomeWorkSum()
+    function calculateHomeWorkSum($first, $second, $third)
     {
-        printf("root\n");
+        return $first+$second+$third;
     }
 }
 
 namespace Nfq\Akademija\Not_Typed {
-    function calculateHomeWorkSum()
+    function calculateHomeWorkSum($first, $second, $third): int
     {
-        printf("nottyped\n");
+        return $first+$second+$third;
     }
 }
 
 namespace Nfq\Akademija\Soft {
-    function calculateHomeWorkSum()
+    function calculateHomeWorkSum($first, $second, $third): int
     {
-        printf("soft\n");
+        return $first+$second+$third;
     }
 }
 
 namespace Nfq\Akademija\Strict {
-    function calculateHomeWorkSum()
+    function calculateHomeWorkSum($first, $second, $third): int
     {
-        printf("strict\n");
+        return $first+$second+$third;
     }
 }

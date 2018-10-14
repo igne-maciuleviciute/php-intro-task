@@ -5,7 +5,7 @@ namespace Nfq\Akademija\Strict;
 
 function callStrictTypeCalculation()
 {
-    printf("strict\n");
+    echo("strict\n");
 }
 
 
