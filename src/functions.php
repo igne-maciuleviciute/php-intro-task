@@ -2,23 +2,37 @@
 
 
 namespace Nfq\Akademija {
-    function calculateHomeWorkSum($a, $b, $c)
+    function calculateHomeWorkSum(...$numbers)
     {
-        return $a + $b + $c;
+        $sum = 0;
+        foreach ($numbers as $numb) {
+           $sum += $numb;
+        }
+        return $sum;
     }
+
 }
 
 namespace Nfq\Akademija\Not_Typed {
-    function calculateHomeWorkSum($a, $b, $c): int
+    function calculateHomeWorkSum(...$numbers): int
     {
-        return $a + $b + $c;
+       $sum = 0;
+       foreach ($numbers as $numb) {
+           $sum += $numb;
+       }
+       return $sum;
     }
+
 }
 
 namespace Nfq\Akademija\Soft {
-    function calculateHomeWorkSum(int $a, int $b, int $c): int
+    function calculateHomeWorkSum(int ...$numbers): int
     {
-        return $a + $b + $c;
+        $sum = 0;
+        foreach ($numbers as $numb) {
+            $sum += $numb;
+        }
+        return $sum;
     }
 }
 

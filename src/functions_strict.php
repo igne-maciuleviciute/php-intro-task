@@ -4,14 +4,18 @@ declare(strict_types=1);
 namespace Nfq\Akademija\Strict;
 
 
-function calculateHomeWorkSum(int $a, int $b, int $c): int
+function calculateHomeWorkSum(int ...$numbers): int
 {
-    return $a + $b + $c;
+    $sum = 0;
+    foreach ($numbers as $numb) {
+        $sum += $numb;
+    }
+    return $sum;
 }
 
-function callCalculateHomeWorkSum($a, $b,  $c)
+function callCalculateHomeWorkSum(...$numbers)
 {
-    return calculateHomeWorkSum($a, $b, $c);
+    return calculateHomeWorkSum(...$numbers);
 }
 
 
