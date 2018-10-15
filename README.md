@@ -3,8 +3,12 @@
 
 **1 klausimas**
 
-Kadangi tai yra _soft type'as_, tai mes turime apsirašyti tokius type'us prieš kiekvieną kintamamąjį, kokį atsakymą turime gauti. Ir soft type'as taip veikia, kad string'as yra paverčiamas į integer'į, floatas taip pat paverčiamas į integer'į, todėl ir gauname atsakymą - sveikąjį skaičių (integer'į).
+_Soft type'as_ taip veikia, kad string'as yra paverčiamas į integer'į, floatas taip pat paverčiamas į integer'į, o kadangi yra nurodyta return type, jog turi grįžti sveikasis skaičius, todėl yra užtikrinama, jog atsakyme gausime sveikąjį skaičių.
 
 **2 klausimas**
 
-Gauname _error'ą_, nes _declare strict type'as_ veikia funkcijos kvietimo momentu. Tas type'as suveikia tik _callCalculateHomeWorkSum funkcijoje_ (kitoje funkcijoje jis nesuveikia), o kadangi šioje funkcijoje yra paduoti netinkami argumentai (be type'ų), todėl ir įvyksta _error'as_. 
+Gauname error'ą, kviečiant funkciją tame pačiame faile, kur aprašom ```declare(strict_types=1)```. strict_types pagalba yra kviečiamos funkcijos parametrai yra sulyginami su aprašytos funkcijos parametrų tipais kvietimo momentu.
+
+***PAVYZDYS***
+
+Šiuo atveju kviečiant funkciją: ```calculateHomeWorkSum(3, 2.2, '1')``` mes gauname error'ą dėl dviejų parametrų: 2.2 (float'as) ir '1' (string'as), kai mūsų aprašyta funkcija prašo, jog visi paduoti kintamieji būtų integer'iai. 

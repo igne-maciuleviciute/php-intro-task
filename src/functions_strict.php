@@ -5,11 +5,8 @@ namespace Nfq\Akademija\Strict;
 
 function calculateHomeWorkSum(int ...$numbers): int
 {
-    $sum = 0;
-    foreach ($numbers as $numb) {
-        $sum += $numb;
-    }
-    return $sum;
+
+    return array_sum($numbers);
 }
 
 function callCalculateHomeWorkSum(...$numbers)
